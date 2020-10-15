@@ -1,0 +1,24 @@
+view {
+  color: var(--themeColor);
+}
+.index-swiper {
+  width: 100%;
+}
+.index-swiper swiper {
+  width: 750rpx;
+  height: 320rpx;
+}
+.index-swiper swiper image {
+  width: 100%;
+}
+.index-navs {
+  width: 100%;
+  display: flex;
+}
+.index-navs .nav-item {
+  padding: 10rpx;
+  flex: 1;
+}
+.index-navs .nav-item image {
+  width: 100%;
+}

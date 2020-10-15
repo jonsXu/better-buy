@@ -16,9 +16,11 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#ff2d4a",
     "navigationBarTitleText": "优购v1",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#ff2d4a",
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "color": "#999",

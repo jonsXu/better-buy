@@ -1,65 +1,37 @@
+import http from  "../../request/index.js"
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    
+    swiperList:[],//轮播图list
+    navs:[],//导航list
   },
 
   /**
-   * 生命周期函数--监听页面加载
+   * 生命周期函数--监/听页面加载,页面加载的时候就会触发事件
    */
   onLoad: function (options) {
-    
+    //获取swiper
+    this.getSwiperList()
+    this.getNavsList()
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
+  //获取轮播图的数据
+  getSwiperList(){
+    http({ url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata'}).then(res=>{
+      if(res.data.meta&&res.data.meta.status==200){
+        this.setData({
+          swiperList:res.data.message
+        })
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
+  //获取导航栏
+  getNavsList(){
+    http({ url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/catitems'}).then(res=>{
+      if(res.data.meta&&res.data.meta.status==200){
+        console.log(res.data.message)
+        this.setData({
+          navs:res.data.message
+        })
+      }
+    })
   }
 })

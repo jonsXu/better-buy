@@ -1,3 +1,18 @@
-<view>首页
-  <text class="iconfont icon-shoucang1"></text>
+<view class="index-container">
+  <SearchInput></SearchInput>
+  <view class="index-swiper">
+    <swiper>
+      <swiper-item wx:for="{{swiperList}}" wx:key="{{item.goods_id}}">
+        <navigator>
+          <image mode="widthFix" src="{{item.image_src}}"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="index-navs">
+    <navigator class="nav-item" wx:for="{{navs}}" wx:key="{{item.name}}">
+      <image mode="widthFix" src="{{item.image_src}}"></image>
+    </navigator>
+  </view>
+
 </view>
