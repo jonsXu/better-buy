@@ -1,6 +1,6 @@
 <view class="index-container">
   <SearchInput></SearchInput>
-  <view class="index-swiper">
+  <view class="index-swiper box">
     <swiper>
       <swiper-item wx:for="{{swiperList}}" wx:key="{{item.goods_id}}">
         <navigator>
@@ -9,10 +9,21 @@
       </swiper-item>
     </swiper>
   </view>
-  <view class="index-navs">
+  <view class="index-navs box">
     <navigator class="nav-item" wx:for="{{navs}}" wx:key="{{item.name}}">
       <image mode="widthFix" src="{{item.image_src}}"></image>
     </navigator>
   </view>
-
+  <view class="index-goods box">
+    <view class="goods-obj-item" wx:for="{{goodsObjectList}}" wx:for-item="goodsObj" wx:for-index="goodsObjIndex" wx:key="{{goodsObj.floor_title.title}}">
+      <view class="goodsObjTitle">
+        <image mode="widthFix" src="{{goodsObj.floor_title.image_src}}"></image>
+      </view>
+      <view class="goodsList">
+        <navigator class="goods" wx:for="{{goodsObj.product_list}}" wx:for-item="goods" wx:for-index="goodsIndex" wx:key="{{goods.name}}">
+          <image mode="{{goodsIndex==0?'widthFix':'sclaeToFill'}}" src="{{goods.image_src}}"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
 </view>
