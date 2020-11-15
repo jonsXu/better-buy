@@ -3,7 +3,7 @@ Page({
   data: {
     swiperList:[],//轮播图list
     navs:[],//导航list
-    goodsObjectList:[],//商品列表
+    goodsObjectList:[],//商品列表 
   },
 
   /**
@@ -17,7 +17,7 @@ Page({
   },
   //获取轮播图的数据
   getSwiperList(){
-    http({ url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata'}).then(res=>{
+    http({ url: '/home/swiperdata'}).then(res=>{
       if(res.data.meta&&res.data.meta.status==200){
         this.setData({
           swiperList:res.data.message
@@ -27,7 +27,7 @@ Page({
   },
   //获取导航栏
   getNavsList(){
-    http({ url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/catitems'}).then(res=>{
+    http({ url: '/home/catitems'}).then(res=>{
       if(res.data.meta&&res.data.meta.status==200){
         console.log(res.data.message)
         this.setData({
@@ -37,8 +37,8 @@ Page({
     })
   },
   //获取商品导航
-  getGoodsObject(){
-    http({ url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/floordata'}).then(res=>{
+  getGoodsObject(que){
+    http({ url: '/home/floordata'}).then(res=>{
       if(res.data.meta&&res.data.meta.status==200){
         console.log(res.data.message)
         this.setData({

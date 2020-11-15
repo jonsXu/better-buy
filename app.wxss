@@ -9,5 +9,7 @@ page{
   --themeColor:#ff2d4a;
   font-size: 28rpx;
 }
-
+image{
+    width: 100%;
+}
 @import "./styles/iconfont.wxss"

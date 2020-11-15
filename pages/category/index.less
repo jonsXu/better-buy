@@ -1,0 +1,51 @@
+/* pages/category/index.wxss */
+page{
+    height: 100%;
+}
+.category-content{
+    height: 100%;
+    width: 100%;
+    .content-box{
+        display: inline-block;
+        height: 100%;
+    }
+    .category-navs{
+        width: 20%;
+        .navs-item{
+            text-align: center;
+            padding: 10rpx 0;
+        }
+        .active-item{
+            color: var(--themeColor);
+        }
+    }
+    .category-goods{
+        width: 80%;
+        .goods-type{
+            margin-top:10rpx;
+        }
+        .goods-type-title{
+            padding: 15rpx 0 ;
+            text-align: center;
+            color:#ccc;
+            text{
+                margin:0 15rpx;
+            }
+        }
+        .goods-list{
+            display: flex;
+            flex-wrap: wrap;
+            .goods-item{
+                width: 33.33%;
+                padding: 15rpx;
+                text-align: center;
+                image{
+                    margin-bottom: 10rpx;
+
+                }
+            }
+        }
+        
+    }
+
+}
