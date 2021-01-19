@@ -12,4 +12,7 @@ page{
 image{
     width: 100%;
 }
+view{
+  width: 100%;
+}
 @import "./styles/iconfont.wxss"

@@ -1,0 +1,12 @@
+<!--components/goods_list_details/ListContent.wxml-->
+<scroll-view class="listDetail">
+  <view class="goodsCard" wx:for="{{list}}" wx:key="id" wx:for-item="goodItem">
+    <navigator class="goodImg">
+      <image mode="widthFix" src="{{goodItem.goods_small_logo}}"></image>
+    </navigator>
+    <view class="goodText">
+      <view class="goodTitle">{{goodItem.goods_name}}</view>
+      <view class="goodPrice">${{goodItem.goods_price}}</view>
+    </view>
+  </view>
+</scroll-view>

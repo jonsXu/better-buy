@@ -1,0 +1,43 @@
+/* components/goods_list_details/ListContent.wxss */
+.listDetail{
+    image{
+        height: 100rpx;
+    }
+    width: 100%;
+    .goodsCard{
+        width: 100%;
+        margin-bottom:10rpx;
+        padding: 5rpx;
+        overflow: hidden;
+        .goodImg{
+            width: 350rpx;
+            float:left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            image{
+                width: 80%;
+            }
+        }
+        .goodText{
+            float: left;
+            margin-left: 10rpx;
+            width: 50%;
+            padding: 20rpx 0;
+            .goodTitle{
+                font-size: 24rpx;
+                height: 62rpx;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp:2;
+            }
+            .goodPrice{
+                margin-top: 20rpx;
+                color: var(--themeColor);
+                font-size: 25rpx;
+                font-weight: 700;
+            }
+        }
+    }
+}

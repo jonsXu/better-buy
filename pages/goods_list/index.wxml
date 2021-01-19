@@ -2,6 +2,12 @@
 <view class="goods_list">
   <SearchInput></SearchInput>
   <view class="goods_list-content">
-    
+    <!-- 传递父组件的tabs，监听tab组件的change事件-->
+    <Tab tabs="{{tabs}}" bindchange="tabChange">
+      <view class="list-detail" wx:if="{{activeTab == '1'}}">
+        <ListDetails  list="{{goods}}"></ListDetails>
+      </view>
+    </Tab>
   </view>
 </view>
+ 
