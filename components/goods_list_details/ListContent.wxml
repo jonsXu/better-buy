@@ -2,7 +2,7 @@
 <scroll-view class="listDetail">
   <view class="goodsCard" wx:for="{{list}}" wx:key="id" wx:for-item="goodItem">
     <navigator class="goodImg">
-      <image mode="widthFix" src="{{goodItem.goods_small_logo}}"></image>
+      <image mode="widthFix" src="{{goodItem.goods_small_logo?goodItem.goods_small_logo:'http://image5.suning.cn/uimg/b2c/newcatentries/0000000000-000000000632066713_1_400x400.jpg'}}"></image>
     </navigator>
     <view class="goodText">
       <view class="goodTitle">{{goodItem.goods_name}}</view>

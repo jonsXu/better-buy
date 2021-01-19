@@ -4,5 +4,6 @@
     "Tab":"../../components/tab/tab",
     "ListDetails":"../../components/goods_list_details/ListContent"
   },
-  "navigationBarTitleText": "商品列表"
+  "navigationBarTitleText": "商品列表",
+  "enablePullDownRefresh":true
 }
