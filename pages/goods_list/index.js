@@ -46,10 +46,12 @@ Page({
         this.setData({
           page:{
             total:res.data.message.total,
-            pagenum:this.data.curpage,
+            pagenum:res.data.message.pagenum,
             pagesize:10
           },
         })
+        //关闭下拉刷新窗口,如果没有调用下拉刷新，这个函数执行不会报错
+        wx.stopPullDownRefresh()
       }
     })
   },
@@ -60,12 +62,22 @@ Page({
   },
   onReachBottom(){
     console.log("页面触底事件")
-    let totalPage = Math.ceil(this.data.page.total/10)
+    let totalPage = Math.ceil((this.data.page.total-57410)/10)
     if(this.data.page.pagenum>=totalPage){
       console.log("已经到头了")
+      wx.showToast({
+        title: '没有下一页数据了',
+      })
       return
     }
-    this.data.curpage++
+    this.data.page.pagenum++
+    this.getGoodsList()
+  },
+  onPullDownRefresh(){
+    this.data.page.pagenum = 1
+    this.setData({
+      goods:[]
+    })
     this.getGoodsList()
   }
 })
