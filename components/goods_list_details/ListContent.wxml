@@ -1,12 +1,13 @@
 <!--components/goods_list_details/ListContent.wxml-->
 <scroll-view class="listDetail">
-  <view class="goodsCard" wx:for="{{list}}" wx:key="id" wx:for-item="goodItem">
-    <navigator class="goodImg">
+  <navigator class="goodsCard" wx:for="{{list}}" 
+  wx:key="id" wx:for-item="goodItem" url="/pages/goods_detail/index?goodsId={{goodItem.goods_id}}">
+    <view class="goodImg">
       <image mode="widthFix" src="{{goodItem.goods_small_logo?goodItem.goods_small_logo:'http://image5.suning.cn/uimg/b2c/newcatentries/0000000000-000000000632066713_1_400x400.jpg'}}"></image>
-    </navigator>
+    </view>
     <view class="goodText">
       <view class="goodTitle">{{goodItem.goods_name}}</view>
       <view class="goodPrice">${{goodItem.goods_price}}</view>
     </view>
-  </view>
+  </navigator>
 </scroll-view>

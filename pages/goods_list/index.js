@@ -38,7 +38,7 @@ Page({
     this.getGoodsList()
   },
   getGoodsList:function (){
-    http({ url: '/goods/search',data:{query:this.data.queryKey,pagenum:this.data.page.pagenum,pagesize:10}}).then(res=>{
+    http({ url: '/goods/search',data:{query:this.data.queryKey,pagenum:this.data.page.pagenum,pagesize:10}},{show:true}).then(res=>{
       if(res&&res.data&&res.data.message){
         this.setData({
           goods:[...this.data.goods,...res.data.message.goods],

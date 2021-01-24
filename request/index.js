@@ -1,6 +1,13 @@
 
  const baseUrl = 'https://api-hmugo-web.itheima.net/api/public/v1'
- const http =(params) =>{
+ const http =(params,load) =>{
+  if(load&&load.show) {
+    wx.showLoading({
+      title: load.msg?load.msg:'加载中...',
+      mask:true,
+    })
+  }
+   
   //临时封装wxwx.request
   return new Promise((res,rej) =>{
     wx.request({
@@ -11,6 +18,9 @@
       },
       fail:(err)=>{
         rej(err)
+      },
+      complete:()=>{
+        wx.hideLoading()
       }
     })
   })
