@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/category/index",
     "pages/goods_list/index",
@@ -12,43 +12,49 @@
     "pages/feedback/index",
     "pages/login/index",
     "pages/auth/index",
-    "pages/pay/index"
+    "pages/pay/index",
+    "pages/crm/uploadGoods/upLoadPage"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff2d4a",
     "navigationBarTitleText": "优购v1",
-    "navigationBarTextStyle":"white",
+    "navigationBarTextStyle": "white",
     "backgroundColor": "#ff2d4a",
-    "enablePullDownRefresh":true
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#999",
     "selectedColor": "#ff2d4a",
     "backgroundColor": "#fafafa",
-    "position":"bottom",
+    "position": "bottom",
     "borderStyle": "black",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "icons/home0.png",
-      "selectedIconPath": "icons/home1.png"
-    },{
-      "pagePath": "pages/category/index",
-      "text": "分类",
-      "iconPath": "icons/category0.png",
-      "selectedIconPath": "icons/category1.png"
-    },{
-      "pagePath": "pages/cart/index",
-      "text": "购物车",
-      "iconPath": "icons/cart0.png",
-      "selectedIconPath": "icons/cart1.png"
-    },{
-      "pagePath": "pages/user/index",
-      "text": "我的",
-      "iconPath": "icons/my0.png",
-      "selectedIconPath": "icons/my1.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/home0.png",
+        "selectedIconPath": "icons/home1.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "icons/category0.png",
+        "selectedIconPath": "icons/category1.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "icons/cart0.png",
+        "selectedIconPath": "icons/cart1.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "icons/my0.png",
+        "selectedIconPath": "icons/my1.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

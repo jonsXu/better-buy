@@ -84,6 +84,11 @@
           "pathName": "pages/goods_detail/index",
           "query": "goodsId=43985",
           "scene": null
+        },
+        {
+          "name": "上传商品",
+          "pathName": "pages/crm/uploadGoods/upLoadPage",
+          "scene": null
         }
       ]
     }
