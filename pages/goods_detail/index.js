@@ -25,7 +25,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    console.log(new Date())
   },
   getGoodsDetail(){
     http({url:`/goods/detail?goods_id=${this.data.goodsId}`},{show:true}).then(res=>{

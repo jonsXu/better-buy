@@ -8,11 +8,14 @@
     </swiper>
   </view>
   <view class="goods-msg">
-    <view class="goods-price">￥ 6075 </view>
+    <view class="goods-price">￥ {{goodsObj.goods_price}} </view>
     <view class="goods-msg-text">
-      <view class="goods-msg-name">张三丰</view>
+      <view class="goods-msg-name">{{goodsObj.goods_name}}</view>
       <view class="goods-msg-line"></view>
-      <view class="goods-msg-save"></view>
+      <view class="goods-msg-save">
+        <view><text class="iconfont icon-shoucang1 buy"></text></view>
+        <view><text class="icontext">收藏</text></view>
+      </view>
     </view>
   </view>
   <view class="goods-introduce"></view>

@@ -2,4 +2,37 @@
     .swiper-pic swiper{
         height: 340px;
     }
+    .goods-msg{
+        .goods-price{
+            color:red;
+            font-weight:700;
+            font-size: 15px;
+        }
+        .goods-msg-text{ 
+            overflow: hidden;
+            height: 92rpx;
+            padding: 5rpx;
+            .goods-msg-name{
+                width: 82%;
+                float: left;
+            }
+            .goods-msg-line{
+                width: 0;
+                border-left: 1rpx solid red;
+                float: left;
+                margin: auto 2rpx;
+                height: 100%;
+            }
+            .goods-msg-save{
+                width: 13%;
+                float: left;
+                padding: 9rpx 6rpx;
+                box-sizing: border-box;
+                view{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
 }
