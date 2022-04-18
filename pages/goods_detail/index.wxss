@@ -42,6 +42,34 @@
   width: 100%;
   height: 150rpx;
   position: fixed;
-  background: green;
   bottom: 0;
+  display: flex;
+  border-top: 1rpx solid #ccc;
+}
+.goods-detail .detail-buy .box {
+  height: 100%;
+}
+.goods-detail .detail-buy .btn {
+  text-align: center;
+  line-height: 150rpx;
+  font-size: 35rpx;
+  color: white;
+  font-weight: 700;
+}
+.goods-detail .detail-buy .box.join {
+  background: burlywood;
+}
+.goods-detail .detail-buy .box.buy {
+  background: brown;
+}
+.goods-detail .detail-buy .iconBox view {
+  height: 50%;
+  position: relative;
+  text-align: center;
+}
+.goods-detail .detail-buy .iconBox view .iconfont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }

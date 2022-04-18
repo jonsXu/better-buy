@@ -22,6 +22,23 @@
     
   </view>
   <view class="detail-buy">
-    
+    <view class="box iconBox kefu" style="width:19%">
+      <view><text class="iconfont icon-kefu buy"></text></view>
+      <view>联系客服</view>
+    </view>
+    <view class="box iconBox fenxiang" style="width:19%">
+      <view><text class="iconfont icon-kefu"></text></view>
+      <view>分享</view>
+    </view>
+    <view class="box iconBox gouwuche" style="width:19%">
+      <view><text class="iconfont icon-gouwuche buy"></text></view>
+      <view>购物车 </view>
+    </view>
+    <view class="box btn join" style="width:22%">
+      <text>加入购物车</text>
+    </view>
+    <view class="box btn buy" style="width:22%">
+      <text>购买</text>
+    </view>
   </view>
 </scroll-view>
