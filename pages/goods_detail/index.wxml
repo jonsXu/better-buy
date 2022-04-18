@@ -1,5 +1,5 @@
 <!--pages/goods_detail/index.wxml-->
-<view class="goods-detail">
+<scroll-view class="goods-detail" scroll-y="true">
   <view class="swiper-pic">
     <swiper indicator-dots="{{true}}">
       <swiper-item wx:for="{{goodsObj.pics}}" wx:key="pics_id">
@@ -18,5 +18,10 @@
       </view>
     </view>
   </view>
-  <view class="goods-introduce"></view>
-</view>
+  <view class="goods-introduce">
+    
+  </view>
+  <view class="detail-buy">
+    
+  </view>
+</scroll-view>

@@ -8,6 +8,8 @@ page,view,text,swiper,swiper-item,navigator{
 page{
   --themeColor:#ff2d4a;
   font-size: 28rpx;
+  height: 100%;
+  width: 100%;
 }
 image{
     width: 100%;

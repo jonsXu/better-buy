@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "DetailBuy":"../../components/detailBuy/detailBuy"
+  },
   "navigationBarTitleText": "商品详情"
 }
