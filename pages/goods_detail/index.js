@@ -1,5 +1,6 @@
 // pages/goods_detail/index.js
 import http from  "../../request/index.js"
+import {addBuyCars} from  "../../utils/busiUtil.js"
 Page({
 
   /**
@@ -35,5 +36,8 @@ Page({
         })
       }
     })
+  },
+  joinBuyCars() {
+    addBuyCars(this.data.goodsObj)
   }
 })

@@ -1,0 +1,9 @@
+<!--components/tab/tab.wxml-->
+<view class="tabs">
+  <view class="tabsList">
+    <view  bindtap="tabClick" data-navindex="{{tabItem}}" class="tabs-item {{activeTab == tabItem.id? 'active-tab':''}}" wx:for="{{tabs}}" wx:key="id" wx:for-item="tabItem">{{tabItem.name}}</view>
+  </view>
+  <view class="content">
+    <slot></slot>
+  </view>
+</view>

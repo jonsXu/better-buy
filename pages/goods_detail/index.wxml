@@ -19,6 +19,7 @@
     </view>
   </view>
   <view class="goods-introduce">
+    <rich-text nodes="{{goodsObj.goods_introduce}}"></rich-text>
     
   </view>
   <view class="detail-buy">
@@ -34,10 +35,10 @@
       <view><text class="iconfont icon-gouwuche buy"></text></view>
       <view>购物车 </view>
     </view>
-    <view class="box btn join" style="width:22%">
+    <view class="box btn join" style="width:22%" bindtap="joinBuy">
       <text>加入购物车</text>
     </view>
-    <view class="box btn buy" style="width:22%">
+    <view class="box btn buy" style="width:22%" >
       <text>购买</text>
     </view>
   </view>
