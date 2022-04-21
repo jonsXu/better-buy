@@ -39,5 +39,17 @@ Page({
   },
   joinBuyCars() {
     addBuyCars(this.data.goodsObj)
+  },
+  // 点击预览
+  handlPreviewImage(e){
+    let index = e.currentTarget.dataset.index
+    console.log(e.currentTarget.dataset)
+    let urls = this.data.goodsObj.pics.map(item => {
+      return item.pics_big_url
+    })
+    wx.previewImage({
+      current: urls[index], // 当前显示图片的http链接
+      urls: urls // 需要预览的图片http链接列表
+    })
   }
 })

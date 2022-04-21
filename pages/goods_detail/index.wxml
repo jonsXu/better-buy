@@ -2,7 +2,7 @@
 <scroll-view class="goods-detail" scroll-y="true">
   <view class="swiper-pic">
     <swiper indicator-dots="{{true}}">
-      <swiper-item wx:for="{{goodsObj.pics}}" wx:key="pics_id">
+      <swiper-item wx:for="{{goodsObj.pics}}" wx:key="pics_id" wx:for-index="index" data-index="{{index}}" bindtap="handlPreviewImage" data-currentImg="{{item.pics_big_url}}">
         <image mode="widthFix" src="{{item.pics_sma_url}}"></image>
       </swiper-item>
     </swiper>
@@ -20,26 +20,25 @@
   </view>
   <view class="goods-introduce">
     <rich-text nodes="{{goodsObj.goods_introduce}}"></rich-text>
-    
   </view>
   <view class="detail-buy">
-    <view class="box iconBox kefu" style="width:19%">
+    <navigator class="box iconBox kefu" style="width:17%">
       <view><text class="iconfont icon-kefu buy"></text></view>
       <view>联系客服</view>
-    </view>
-    <view class="box iconBox fenxiang" style="width:19%">
+    </navigator>
+    <navigator class="box iconBox fenxiang" style="width:17%">
       <view><text class="iconfont icon-kefu"></text></view>
       <view>分享</view>
-    </view>
-    <view class="box iconBox gouwuche" style="width:19%">
+    </navigator>
+    <navigator class="box iconBox gouwuche" style="width:17%">
       <view><text class="iconfont icon-gouwuche buy"></text></view>
       <view>购物车 </view>
-    </view>
-    <view class="box btn join" style="width:22%" bindtap="joinBuy">
+    </navigator>
+    <view class="box btn join" style="width:24.5%" bindtap="joinBuy">
       <text>加入购物车</text>
     </view>
-    <view class="box btn buy" style="width:22%" >
+    <navigator class="box btn buy" style="width:24.5%" url="/pages/buyDetail/index?goodsId={{goodItem.goods_id}}">
       <text>购买</text>
-    </view>
+    </navigator>
   </view>
 </scroll-view>
