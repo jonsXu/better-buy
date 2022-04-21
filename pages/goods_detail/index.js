@@ -47,6 +47,7 @@ Page({
     let urls = this.data.goodsObj.pics.map(item => {
       return item.pics_big_url
     })
+    // previewImage可以预览一批大图
     wx.previewImage({
       current: urls[index], // 当前显示图片的http链接
       urls: urls // 需要预览的图片http链接列表
