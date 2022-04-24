@@ -24,7 +24,7 @@
   <view class="detail-buy">
     <navigator class="box iconBox kefu" style="width:17%">
       <view><text class="iconfont icon-kefu buy"></text></view>
-      <view>联系客服</view>
+      <button open-type="contact">联系客服</button>
     </navigator>
     <navigator class="box iconBox fenxiang" style="width:17%">
       <view><text class="iconfont icon-kefu"></text></view>
