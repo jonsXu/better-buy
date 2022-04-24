@@ -37,8 +37,13 @@ Page({
       }
     })
   },
+  // 加入购物车
   joinBuyCars() {
     addBuyCars(this.data.goodsObj)
+  },
+  // 加入收藏
+  addSave() {
+    // addSaveList(this.data.goodsObj)
   },
   // 点击预览
   handlPreviewImage(e){
