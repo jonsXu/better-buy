@@ -1,4 +1,5 @@
 {
+  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -36,14 +37,21 @@
           "name": "商品详情",
           "pathName": "pages/goods_detail/index",
           "query": "goodsId=57438",
-          "scene": null,
-          "launchMode": "default"
+          "launchMode": "default",
+          "scene": null
         },
         {
           "name": "上传商品",
           "pathName": "pages/crm/uploadGoods/upLoadPage",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "收藏列表页面",
+          "pathName": "pages/save_list/index",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
         }
       ]
     }

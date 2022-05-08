@@ -13,7 +13,8 @@
     "pages/login/index",
     "pages/auth/index",
     "pages/pay/index",
-    "pages/crm/uploadGoods/upLoadPage"
+    "pages/crm/uploadGoods/upLoadPage",
+    "pages/save_list/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
