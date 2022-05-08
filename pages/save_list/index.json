@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Tab":"../../components/tab/tab",
+    "ListComponent": "../../components/save_list_component/index"
+  }
+}

@@ -1,0 +1,18 @@
+.save-list-query {
+  height: 100rpx;
+  padding: 10rpx;
+  overflow: hidden;
+}
+.save-list-query .btn {
+  float: left;
+  height: 100%;
+  width: auto;
+  padding: 21rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #ccc;
+  margin-right: 20rpx;
+}
+.save-list-query .active-btn {
+  border-color: red;
+  color: red;
+}

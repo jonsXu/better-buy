@@ -30,6 +30,13 @@
   padding: 9rpx 6rpx;
   box-sizing: border-box;
 }
+.goods-detail .goods-msg .goods-msg-text .goods-msg-save button {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 25rpx;
+}
 .goods-detail .goods-msg .goods-msg-text .goods-msg-save view {
   display: flex;
   justify-content: center;

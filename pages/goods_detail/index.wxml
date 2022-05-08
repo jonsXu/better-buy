@@ -14,7 +14,7 @@
       <view class="goods-msg-line"></view>
       <view class="goods-msg-save" bindtap="addSave">
         <view><text class="iconfont icon-shoucang1 buy"></text></view>
-        <button open-type="contact"><text class="icontext">收藏</text></button>
+        <view><text class="icontext">收藏</text></view>
       </view>
     </view>
   </view>

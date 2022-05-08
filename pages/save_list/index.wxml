@@ -1,0 +1,17 @@
+<!--pages/save_list/index.wxml-->
+<view class="save_list">
+  <Tab tabs="{{tabs}}" bindchange="tabChange">
+    <view class="goods_save" wx:if="{{activeTab == '1'}}">
+     <ListComponent btns="{{good_saveBtns}}" list="{{saveList}}"></ListComponent>
+    </view>
+    <view class="brand_save" wx:if="{{activeTab == '2'}}">
+      商品收藏
+    </view>
+    <view class="goods_save" wx:if="{{activeTab == '3'}}">
+      店铺收藏
+    </view>
+    <view class="goods_save" wx:if="{{activeTab == '4'}}">
+      浏览足迹
+    </view>
+  </Tab>
+</view>

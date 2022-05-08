@@ -1,0 +1,10 @@
+<!--components/save_list_component/index.wxml-->
+<view>
+  <view class="save-list-query">
+    <view class="btn {{activeQuery == btnItem.active ? 'active-btn':''}}" bindtap="btnClick" 
+    data-active="{{btnItem.active}}" wx:for="{{btns}}" wx:key="active" wx:for-item="btnItem">{{btnItem.name}}</view>
+  </view>
+  <view class="list-content">
+    <GoodsList list="{{showList}}"></GoodsList>
+  </view>
+</view>

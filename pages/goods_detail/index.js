@@ -1,6 +1,6 @@
 // pages/goods_detail/index.js
 import http from  "../../request/index.js"
-import {addBuyCars} from  "../../utils/busiUtil.js"
+import {addSaveList,addBuyCars} from  "../../utils/busiUtil.js"
 Page({
 
   /**
@@ -43,7 +43,10 @@ Page({
   },
   // 加入收藏
   addSave() {
-    // addSaveList(this.data.goodsObj)
+    addSaveList(this.data.goodsObj)
+    wx.navigateTo({
+      url: '/pages/save_list/index',
+    })
   },
   // 点击预览
   handlPreviewImage(e){
